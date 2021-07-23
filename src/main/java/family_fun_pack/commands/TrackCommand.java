@@ -34,17 +34,17 @@ import family_fun_pack.network.PacketListener;
 public class TrackCommand extends Command implements PacketListener {
 
   // Scan mode parameters
-  private static final int WINDOW_SIZE = 9;
-  private static final int BURST_SIZE = 3;
-  private static final long RETRY_TIME = 2000;
+  private static final int WINDOW_SIZE = 20;
+  private static final int BURST_SIZE = 10;
+  private static final long RETRY_TIME = 500;
 
   // Track mode parameters
-  private static final long REFRESH_TIME = 500;
+  private static final long REFRESH_TIME = 100;
   private static final int SAVED_TRACKED_POSITIONS = 16;
   private static final int LOGS_MAX_SIZE = 64;
 
   // Server dependent, have to be odd
-  private static final int PLAYER_RENDER_DISTANCE = 7; // 9b render distance
+  private static final int PLAYER_RENDER_DISTANCE = 8; // 9b render distance
 
   public ChunkPos corner;
   public int width_x, width_z;
